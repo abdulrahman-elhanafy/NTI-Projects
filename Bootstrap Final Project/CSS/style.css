@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #e63946;
+  --color-primary-dark: #c92c38;
+  --color-secondary: #1d3557;
+  --third-color: #e95d33;
+  --color-bg: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-text: #111827;
+  --color-text-light: #6c757d;
+  --color-border: #e1e3e4;
+
+  --font-main: "Roboto", sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.13);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+  --transition-text-color: color 0.3s, ease;
+  --transition-bg-color:
+    color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  --transition-transform: transform 0.3s ease;
+  --transition-shadow: box-shadow 0.3s ease;
+  --transition-shadow-bgc: box-shadow 0.3s ease, background-color 0.3s ease;
+  --transition-base:
+    color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.902);
+}
+
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+}
+
+.normalButton {
+  font-weight: 500 !important;
+  --bs-btn-color: #ffffff !important;
+  background-color: var(--third-color) !important;
+  border-color: var(--third-color) !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+}
+
+
+.normalButton:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 86, 34, 0.902) !important;
+  border-color: rgb(255 87 34 / 0.9) !important;
+}
+
+.normalButton:active {
+  color: #ffffff !important;
+  background-color: rgba(255, 86, 34, 0.9) !important;
+  border-color: rgb(255 87 34 / 0.9) !important;
+}
+
+.nav-item a {
+  font-weight: 600;
+  transition: var(--transition-base);
+  -webkit-transition: var(--transition-base);
+  -moz-transition: var(--transition-base);
+  -ms-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+}
+
+.nav-item a:hover {
+  color: var(--color-primary);
+}
+
+.nav-item a:active {
+  transform: scale(0.80);
+  -webkit-transform: scale(0.80);
+  -moz-transform: scale(0.80);
+  -ms-transform: scale(0.80);
+  -o-transform: scale(0.80);
+}
+
+.section .nav-item .active {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+.Gym-name {
+  color: var(--color-primary-dark);
+  font-weight: 900;
+  transition: var(--transition-base);
+  -webkit-transition: var(--transition-base);
+  -moz-transition: var(--transition-base);
+  -ms-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+}
+
+.Gym-name:hover {
+  color: var(--color-primary);
+}
+
+.Gym-name:active {
+  transform: scale(0.95);
+}
+
+
+footer {
+  background-color: rgb(46 49 50 / 1);
+}
+
+.footerBottom{
+  max-width: 1200px;
+  border-top: 1px solid var(--color-border);
+}
