@@ -152,6 +152,60 @@
     line-height: 1.5;
 }
 
+/* Class Schedule Section */
+
+.table {
+    min-width: 600px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+td,
+th {
+    padding: 1rem 1.5rem !important;
+}
+
+.trainer-time {
+    color: var(--color-text);
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+.trainer-job {
+    color: var(--color-text);
+    font-weight: 600;
+    transition: var(--transition-text-color);
+}
+
+.trainer-name {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+}
+
+.open-gym {
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+.table-color {
+    --bs-table-bg: var(--color-bg);
+}
+
+.to-hover {
+    transition: var(--transition-bg-color);
+    -webkit-transition: var(--transition-bg-color);
+    -moz-transition: var(--transition-bg-color);
+    -ms-transition: var(--transition-bg-color);
+    -o-transition: var(--transition-bg-color);
+}
+
+.to-hover:hover {
+    --bs-table-bg: var(--color-bg);
+}
 
 @media screen and (width >=768px) {
     #middle {

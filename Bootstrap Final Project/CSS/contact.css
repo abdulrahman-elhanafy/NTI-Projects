@@ -1,0 +1,154 @@
+/* Intro Section */
+
+.hero {
+    margin: 6rem auto 80px auto;
+    padding: 0 24px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 18px;
+    color: rgb(87 94 112);
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 42rem;
+}
+
+.left {
+    padding: 3rem;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    -webkit-border-radius: var(--radius-md);
+    -moz-border-radius: var(--radius-md);
+    -ms-border-radius: var(--radius-md);
+    -o-border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+.left h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+form label {
+    color: rgb(91 64 57);
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    color: rgb(25 28 29);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-bg) !important;
+    margin: 30px 0;
+}
+
+textarea {
+    color: rgb(25 28 29);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    background-color: var(--color-bg) !important;
+}
+
+.top {
+    padding: 2rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.top h2 {
+    color: rgb(25 28 29);
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 2rem;
+}
+
+
+.contact-icon {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(233, 93, 51, 0.15);
+    flex-shrink: 0;
+}
+
+.contact-icon span {
+    color: var(--third-color);
+    font-size: 28px;
+}
+
+.contact-info h3 {
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: .4rem;
+}
+
+.contact-info p {
+    color: rgba(91, 64, 57, 1);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.bottom {
+    padding: 1.5rem 2rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    -webkit-border-radius: var(--radius-md);
+    -moz-border-radius: var(--radius-md);
+    -ms-border-radius: var(--radius-md);
+    -o-border-radius: var(--radius-md);
+}
+
+.bottom h3 {
+    color: var(--color-text);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    text-decoration: none;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: var(--transition-bg-color);
+    -webkit-transition: var(--transition-bg-color);
+    -moz-transition: var(--transition-bg-color);
+    -ms-transition: var(--transition-bg-color);
+    -o-transition: var(--transition-bg-color);
+}
+
+.social-icon span {
+    font-size: 26px;
+}
+
+.social-icon:hover {
+    background-color: var(--third-color);
+    color: #fff;
+}

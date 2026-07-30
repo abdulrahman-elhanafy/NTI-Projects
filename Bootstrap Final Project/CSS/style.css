@@ -10,11 +10,11 @@
   --color-primary: #e63946;
   --color-primary-dark: #c92c38;
   --color-secondary: #1d3557;
-  --third-color: #e95d33;
+  --third-color: rgb(233, 93, 51);
   --color-bg: #f8f9fa;
   --color-surface: #ffffff;
   --color-text: #111827;
-  --color-text-light: #6c757d;
+  --color-text-light: #6c757d85;
   --color-border: #e1e3e4;
 
   --font-main: "Roboto", sans-serif;
@@ -52,7 +52,12 @@ body {
   --bs-btn-color: #ffffff !important;
   background-color: var(--third-color) !important;
   border-color: var(--third-color) !important;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  box-shadow: 0 3px 8px rgba(233, 94, 51, 0.74) !important;
+  transition: var(--transition-transform);
+  -moz-transition: var(--transition-transform);
+  -ms-transition: var(--transition-transform);
+  -o-transition: var(--transition-transform);
+  -webkit-transition: var(--transition-transform);
 }
 
 
@@ -60,12 +65,22 @@ body {
   color: #ffffff !important;
   background-color: rgba(255, 86, 34, 0.902) !important;
   border-color: rgb(255 87 34 / 0.9) !important;
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
 }
 
 .normalButton:active {
   color: #ffffff !important;
   background-color: rgba(255, 86, 34, 0.9) !important;
   border-color: rgb(255 87 34 / 0.9) !important;
+  transform: scale(0.80);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.80);
+  -ms-transform: scale(0.80);
+  -o-transform: scale(0.80);
 }
 
 .nav-item a {
@@ -82,11 +97,11 @@ body {
 }
 
 .nav-item a:active {
-  transform: scale(0.80);
-  -webkit-transform: scale(0.80);
-  -moz-transform: scale(0.80);
-  -ms-transform: scale(0.80);
-  -o-transform: scale(0.80);
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
 }
 
 .section .nav-item .active {
@@ -117,7 +132,7 @@ footer {
   background-color: rgb(46 49 50 / 1);
 }
 
-.footerBottom{
+.footerBottom {
   max-width: 1200px;
   border-top: 1px solid var(--color-border);
 }
